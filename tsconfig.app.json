@@ -8,6 +8,7 @@
   "exclude": [
     "src/**/__tests__/*"
   ],
+  //  在tsconfig.app.json的中compilerOptions里添加lib: ["es2021"]，这样就可以使用es2021的新特性了
   "compilerOptions": {
     "composite": true,
     "baseUrl": ".",
@@ -15,6 +16,9 @@
       "@/*": [
         "./src/*"
       ]
-    }
+    },
+    "lib": [
+      "es2021"
+    ]
   }
 }
